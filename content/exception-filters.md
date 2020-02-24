@@ -107,22 +107,22 @@ async findAll() {
 
 Nest provides a set of standard exceptions that inherit from the base `HttpException`. These are exposed from the `@nestjs/common` package, and represent many of the most common HTTP exceptions:
 
-- `BadRequestException`
-- `UnauthorizedException`
-- `NotFoundException`
-- `ForbiddenException`
-- `NotAcceptableException`
-- `RequestTimeoutException`
-- `ConflictException`
-- `GoneException`
-- `PayloadTooLargeException`
-- `UnsupportedMediaTypeException`
-- `UnprocessableEntityException`
-- `InternalServerErrorException`
-- `NotImplementedException`
-- `BadGatewayException`
-- `ServiceUnavailableException`
-- `GatewayTimeoutException`
+- 400: `BadRequestException`
+- 401: `UnauthorizedException`
+- 404: `NotFoundException`
+- 403: `ForbiddenException`
+- 406: `NotAcceptableException`
+- 408: `RequestTimeoutException`
+- 409: `ConflictException`
+- 410: `GoneException`
+- 413: `PayloadTooLargeException`
+- 415: `UnsupportedMediaTypeException`
+- 422: `UnprocessableEntityException`
+- 500: `InternalServerErrorException`
+- 501: `NotImplementedException`
+- 502: `BadGatewayException`
+- 503: `ServiceUnavailableException`
+- 504: `GatewayTimeoutException`
 
 #### Exception filters
 
